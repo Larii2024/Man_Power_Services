@@ -136,7 +136,7 @@ var cStyle = {
                 <div class="row d-flex justify-content-center flex-wrap">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link"  href="/userform">
+                            <a class="portfolio-link"  href="/Man_Power_Services/#/userform">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fa fa-plus fa-1x"></i></div>
                                 </div>
