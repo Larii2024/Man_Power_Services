@@ -150,7 +150,7 @@ var cStyle = {
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" href="/candidateform">
+                            <a class="portfolio-link" href="/Man_Power_Services/#/candidateform">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fa fa-plus fa-1x"></i></div>
                                 </div>
@@ -164,7 +164,7 @@ var cStyle = {
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" href="/nurseform">
+                            <a class="portfolio-link" href="/Man_Power_Services/#/nurseform">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fa fa-plus fa-1x"></i></div>
                                 </div>
@@ -178,7 +178,7 @@ var cStyle = {
                     </div>
                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" href="/serviceform">
+                            <a class="portfolio-link" href="/Man_Power_Services/#/serviceform">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fa fa-plus fa-1x"></i></div>
                                 </div>
@@ -205,8 +205,7 @@ var cStyle = {
       style={ cStyle }
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h4>Nulla vitae elit libero, a pharetra augue mollis interdum.</h4>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -218,8 +217,7 @@ var cStyle = {
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h4 className="text-black" >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -231,8 +229,7 @@ var cStyle = {
     />
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h4>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</h4>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

@@ -29,7 +29,7 @@ export class Success extends Component{
                         onClick={this.back}>Edit Submission</Button> <br/> 
                      <Button type="submit" className="bg-success"
                     style={styles.button}
-                    href="/">Confirm Submision</Button>
+                    href="/Man_Power_Services">Confirm Submision</Button>
                     </Container>
                 
             
