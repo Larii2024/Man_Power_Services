@@ -2,7 +2,8 @@ import React,{Component} from 'react';
 import './assets/css/bootstrap.min.css'
 import './assets/css/agency.min.css'
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
+   Redirect,
   Switch,
   Route,
   Link
@@ -25,13 +26,13 @@ export default function App()
     {
    
   return (
+    <BrowserRouter>
     <div className="App">
-      <Router>
       <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
             <div class="container">
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/Man_Power_Services">Home</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Us</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">services</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">other services</a></li>
@@ -43,21 +44,12 @@ export default function App()
             </div>
         </nav> 
          <Switch>
-           <Route path="/Man_Power_Services/serviceform">
-            <Sf/>
-          </Route>
-         <Route path="/Man_Power_Services/nurseform">
-            <Nurseform/>
-          </Route>
-          <Route path="/Man_Power_Services/userform">
-            <Userform/>
-          </Route>
-            <Route path="/Man_Power_Services/candidateform">
-            <Candiform/>
-          </Route>
-          <Route path="/Man_Power_Services">
-            <Hom/>
-          </Route> 
+          <Route exact path='/Man_Power_Services' component={() => <Hom/>} />
+              <Route exact path='/userform' component={Userform} />
+              <Route exact path="/candidateform" component={Candiform} />
+              <Route exact path="/nurseform" component={Nurseform}/>
+              <Route exact path="/serviceform" component={Sf}/>
+              <Redirect to="/Man_Power_Services" />
          </Switch>
          <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
          <footer class="footer py-4 bg-light">
@@ -103,8 +95,9 @@ export default function App()
             </div>
             </div>
         </footer>
-        </Router>
         </div>
+        </BrowserRouter>
+        
   );
   }
 
@@ -143,7 +136,7 @@ var cStyle = {
                 <div class="row d-flex justify-content-center flex-wrap">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link"  href="/Man_Power_Services/userform">
+                            <a class="portfolio-link"  href="/userform">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fa fa-plus fa-1x"></i></div>
                                 </div>
@@ -157,7 +150,7 @@ var cStyle = {
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" href="/Man_Power_Services/candidateform">
+                            <a class="portfolio-link" href="/candidateform">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fa fa-plus fa-1x"></i></div>
                                 </div>
@@ -171,7 +164,7 @@ var cStyle = {
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" href="/Man_Power_Services/nurseform">
+                            <a class="portfolio-link" href="/nurseform">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fa fa-plus fa-1x"></i></div>
                                 </div>
@@ -185,7 +178,7 @@ var cStyle = {
                     </div>
                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" href="/Man_Power_Services/serviceform">
+                            <a class="portfolio-link" href="/serviceform">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fa fa-plus fa-1x"></i></div>
                                 </div>
