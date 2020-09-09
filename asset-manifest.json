@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Man_Power_Services/static/css/main.537a4711.chunk.css",
-    "main.js": "/Man_Power_Services/static/js/main.d6ddbe0b.chunk.js",
-    "main.js.map": "/Man_Power_Services/static/js/main.d6ddbe0b.chunk.js.map",
+    "main.js": "/Man_Power_Services/static/js/main.5dfe0ebf.chunk.js",
+    "main.js.map": "/Man_Power_Services/static/js/main.5dfe0ebf.chunk.js.map",
     "runtime-main.js": "/Man_Power_Services/static/js/runtime-main.7c4fd9fe.js",
     "runtime-main.js.map": "/Man_Power_Services/static/js/runtime-main.7c4fd9fe.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/Man_Power_Services/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.54bbf889.chunk.js": "/Man_Power_Services/static/js/2.54bbf889.chunk.js",
     "static/js/2.54bbf889.chunk.js.map": "/Man_Power_Services/static/js/2.54bbf889.chunk.js.map",
     "index.html": "/Man_Power_Services/index.html",
-    "precache-manifest.61786c2d926ec4edff167479cb821b90.js": "/Man_Power_Services/precache-manifest.61786c2d926ec4edff167479cb821b90.js",
+    "precache-manifest.968791b595591ed7552fe61d4575a2eb.js": "/Man_Power_Services/precache-manifest.968791b595591ed7552fe61d4575a2eb.js",
     "service-worker.js": "/Man_Power_Services/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/Man_Power_Services/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.537a4711.chunk.css.map": "/Man_Power_Services/static/css/main.537a4711.chunk.css.map",
@@ -25,6 +25,6 @@
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.54bbf889.chunk.js",
     "static/css/main.537a4711.chunk.css",
-    "static/js/main.d6ddbe0b.chunk.js"
+    "static/js/main.5dfe0ebf.chunk.js"
   ]
 }
