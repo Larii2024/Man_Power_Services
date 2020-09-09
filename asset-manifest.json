@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Man_Power_Services/my-app/static/css/main.392ab2c2.chunk.css",
+    "main.js": "/Man_Power_Services/my-app/static/js/main.fc81bee1.chunk.js",
+    "main.js.map": "/Man_Power_Services/my-app/static/js/main.fc81bee1.chunk.js.map",
+    "runtime-main.js": "/Man_Power_Services/my-app/static/js/runtime-main.a3207a10.js",
+    "runtime-main.js.map": "/Man_Power_Services/my-app/static/js/runtime-main.a3207a10.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/Man_Power_Services/my-app/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.601ffdd6.chunk.js": "/Man_Power_Services/my-app/static/js/2.601ffdd6.chunk.js",
+    "static/js/2.601ffdd6.chunk.js.map": "/Man_Power_Services/my-app/static/js/2.601ffdd6.chunk.js.map",
+    "index.html": "/Man_Power_Services/my-app/index.html",
+    "precache-manifest.932bb54fd2065941126f09469401408d.js": "/Man_Power_Services/my-app/precache-manifest.932bb54fd2065941126f09469401408d.js",
+    "service-worker.js": "/Man_Power_Services/my-app/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/Man_Power_Services/my-app/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.392ab2c2.chunk.css.map": "/Man_Power_Services/my-app/static/css/main.392ab2c2.chunk.css.map",
+    "static/js/2.601ffdd6.chunk.js.LICENSE.txt": "/Man_Power_Services/my-app/static/js/2.601ffdd6.chunk.js.LICENSE.txt",
+    "static/media/5.jpg": "/Man_Power_Services/my-app/static/media/5.2bb71ff8.jpg",
+    "static/media/6.png": "/Man_Power_Services/my-app/static/media/6.01a5d86a.png",
+    "static/media/attbg.png": "/Man_Power_Services/my-app/static/media/attbg.62fd37ef.png",
+    "static/media/agency.min.css": "/Man_Power_Services/my-app/static/media/map-image.f40ed5b1.png",
+    "static/media/unknownman.jpg": "/Man_Power_Services/my-app/static/media/unknownman.e3bca766.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a3207a10.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.601ffdd6.chunk.js",
+    "static/css/main.392ab2c2.chunk.css",
+    "static/js/main.fc81bee1.chunk.js"
+  ]
+}
