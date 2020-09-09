@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import './assets/css/bootstrap.min.css'
 import './assets/css/agency.min.css'
 import {
-  BrowserRouter,
+  HashRouter,
    Redirect,
   Switch,
   Route,
@@ -26,7 +26,7 @@ export default function App()
     {
    
   return (
-    <BrowserRouter>
+    <HashRouter>
     <div className="App">
       <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
             <div class="container">
@@ -96,7 +96,7 @@ export default function App()
             </div>
         </footer>
         </div>
-        </BrowserRouter>
+        </HashRouter>
         
   );
   }
