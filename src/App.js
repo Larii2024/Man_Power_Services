@@ -43,21 +43,21 @@ export default function App()
             </div>
         </nav> 
          <Switch>
-           <Route path="/serviceform">
+           <Route path="/Man_Power_Services/serviceform">
             <Sf/>
           </Route>
-         <Route path="/nurseform">
+         <Route path="/Man_Power_Services/nurseform">
             <Nurseform/>
           </Route>
-          <Route path="/userform">
+          <Route path="/Man_Power_Services/userform">
             <Userform/>
           </Route>
-            <Route path="/candidateform">
+            <Route path="/Man_Power_Services/candidateform">
             <Candiform/>
           </Route>
-          <Route path="/">
+          <Route path="/Man_Power_Services">
             <Hom/>
-          </Route>
+          </Route> 
          </Switch>
          <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
          <footer class="footer py-4 bg-light">
@@ -143,7 +143,7 @@ var cStyle = {
                 <div class="row d-flex justify-content-center flex-wrap">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link"  href="/userform">
+                            <a class="portfolio-link"  href="/Man_Power_Services/userform">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fa fa-plus fa-1x"></i></div>
                                 </div>
@@ -157,7 +157,7 @@ var cStyle = {
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" href="/candidateform">
+                            <a class="portfolio-link" href="/Man_Power_Services/candidateform">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fa fa-plus fa-1x"></i></div>
                                 </div>
@@ -171,7 +171,7 @@ var cStyle = {
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" href="/nurseform">
+                            <a class="portfolio-link" href="/Man_Power_Services/nurseform">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fa fa-plus fa-1x"></i></div>
                                 </div>
@@ -185,7 +185,7 @@ var cStyle = {
                     </div>
                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
                         <div class="portfolio-item">
-                            <a class="portfolio-link" href="/serviceform">
+                            <a class="portfolio-link" href="/Man_Power_Services/serviceform">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fa fa-plus fa-1x"></i></div>
                                 </div>
