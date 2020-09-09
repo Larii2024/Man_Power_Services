@@ -45,10 +45,10 @@ export default function App()
         </nav> 
          <Switch>
           <Route exact path='/Man_Power_Services' component={() => <Hom/>} />
-              <Route exact path='/userform' component={Userform} />
-              <Route exact path="/candidateform" component={Candiform} />
-              <Route exact path="/nurseform" component={Nurseform}/>
-              <Route exact path="/serviceform" component={Sf}/>
+              <Route  path='/userform' component={Userform} />
+              <Route path="/candidateform" component={Candiform} />
+              <Route  path="/nurseform" component={Nurseform}/>
+              <Route path="/serviceform" component={Sf}/>
               <Redirect to="/Man_Power_Services" />
          </Switch>
          <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
