@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6270a37c04a9f7de2abd3074600a3371",
+    "revision": "b123250d6e758081203fc5b77407d342",
     "url": "/Man_Power_Services/index.html"
   },
   {
-    "revision": "636f9e1dae257d35220b",
+    "revision": "b5aca4c7fb6efc10365f",
     "url": "/Man_Power_Services/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "0dbf6dc4f71161ed81de",
+    "revision": "ee145d1eccb1b986713f",
     "url": "/Man_Power_Services/static/css/main.537a4711.chunk.css"
   },
   {
-    "revision": "636f9e1dae257d35220b",
-    "url": "/Man_Power_Services/static/js/2.54bbf889.chunk.js"
+    "revision": "b5aca4c7fb6efc10365f",
+    "url": "/Man_Power_Services/static/js/2.1d569fb7.chunk.js"
   },
   {
     "revision": "be6629bd7ab7e127b5d76ac590c4478e",
-    "url": "/Man_Power_Services/static/js/2.54bbf889.chunk.js.LICENSE.txt"
+    "url": "/Man_Power_Services/static/js/2.1d569fb7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0dbf6dc4f71161ed81de",
-    "url": "/Man_Power_Services/static/js/main.5dfe0ebf.chunk.js"
+    "revision": "ee145d1eccb1b986713f",
+    "url": "/Man_Power_Services/static/js/main.1c33287c.chunk.js"
   },
   {
     "revision": "17c20ee0c43ccaee4144",
