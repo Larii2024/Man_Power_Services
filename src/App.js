@@ -1,13 +1,9 @@
-import React,{Component} from 'react';
+import React from 'react';
+import "../node_modules/jquery/dist/jquery.min.js";
+import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import './assets/css/bootstrap.min.css'
 import './assets/css/agency.min.css'
-import {
-  HashRouter,
-   Redirect,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import {HashRouter,Redirect,Switch,Route,Link} from "react-router-dom";
 import './App.css';
 import Userform from './components/userform';
 import Nurseform from './components/nurseform';
@@ -17,32 +13,42 @@ import unknownwoman from './assets/img/unknownwoman.png';
 import unknownman from './assets/img/unknownman.jpg';
 import header_bg from './assets/img/header-bg.jpg';
 import bg1 from './assets/img/attbg.png';
-import c1 from './assets/img/6.png';
-import c2 from './assets/img/7.jpg';
-import c3 from './assets/img/5.jpg';
-import Carousel from 'react-bootstrap/Carousel'
+import c1 from './assets/img/5.jpg';
+import c4 from './assets/img/11.jpg';
+import c2 from './assets/img/12.jpg';
+import c3 from './assets/img/7.jpg';
+import logo from './assets/img/logo.jpeg';
+import Carousel from 'react-bootstrap/Carousel';
+import { Helmet } from "react-helmet";
 
-export default function App()
-    {
-   
+export default function App(){ 
+	var logoStyle = {
+  width: "55px",
+  height: "55px",
+  borderRadius:"30px"
+};
   return (
     <HashRouter>
     <div className="App">
-      <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
-            <div class="container">
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/Man_Power_Services">Home</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">services</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">other services</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </nav> 
+  	<Helmet>
+     <title>Man Power Services</title>
+    </Helmet>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+	  	<a class="navbar-brand text-white justify-content-center" href="#"><img src={logo} alt="logo" style={logoStyle}/><span>{' '}</span>ANTHROPIC</a>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  	</button>
+  		<div class="collapse navbar-collapse" id="navbarResponsive">
+    	<ul class="navbar-nav text-uppercase ml-auto">
+    	<li class="nav-item"><a class="nav-link js-scroll-trigger" href="/Man_Power_Services">Home</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">services</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">other services</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+   		</ul>
+  		</div>
+	</nav>
          <Switch>
           <Route exact path='/Man_Power_Services' component={() => <Hom/>} />
               <Route  path='/userform' component={Userform} />
@@ -58,10 +64,10 @@ export default function App()
                 <div className="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul className="list-unstyled">
-                        <li><Link to='/home'>Home</Link></li>
-                        <li><Link to='/aboutus'>About Us</Link></li>
-                        <li><Link to='/menu'>Menu</Link></li>
-                        <li><Link to='/contactus'>Contact Us</Link></li>
+                        <li ><a href="/Man_Power_Services">Home</a></li>
+        				<li ><a href="#about">About Us</a></li>
+        				<li ><a  href="#portfolio">services</a></li>
+        				<li ><a  href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div className="col-7 col-sm-5">
@@ -71,10 +77,10 @@ export default function App()
                       Sadashiv Nagar, <br/>
                       Belgaum,<br/>
                      Karnataka 590019<br />
-                      <i className="fa fa-phone fa-lg"></i>: +852 1234 5678<br />
-                      <i className="fa fa-fax fa-lg"></i>: +852 8765 4321<br />
-                      <i className="fa fa-envelope fa-lg"></i>: <a href="mailto:confusion@job.net">
-                         confusion@food.net</a>
+                      <i className="fa fa-phone fa-lg"></i>: 9945950646<br />
+                      <i className="fa fa-fax fa-lg"></i>: 8088268634<br />
+                      <i className="fa fa-envelope fa-lg"></i>: <a href="mailto:anthropic78@gmail.com">
+                         anthropic78@gmail.com</a>
                     </address>
                 </div>
                  <div className="col-12 col-sm-4 align-self-center">
@@ -88,11 +94,6 @@ export default function App()
                     </div>
                 </div>
             </div>
-            <div className="row justify-content-center">             
-                <div className="col-auto">
-                    <p>© Copyright 2018 Ristorante Con Fusion</p>
-                </div>
-            </div>
             </div>
         </footer>
         </div>
@@ -101,7 +102,7 @@ export default function App()
   );
   }
 
-  function Hom(){
+function Hom(){
 var sectionStyle = {
   width: "100%",
   height: "auto",
@@ -126,7 +127,7 @@ var cStyle = {
                <div><h3>It's Nice To Meet You</h3></div>
                {/* <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>*/}
             </div>
-            </header>
+         </header>
         <section class="page-section " id="portfolio" style={ sectionStyle }>
             <div class="container">
                 <div class="text-center">
@@ -143,7 +144,7 @@ var cStyle = {
                                 <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div><h3 class="portfolio-caption-heading">Are you searching for a job</h3></div>
+                                <div><h3 class="portfolio-caption-heading"><a href="/Man_Power_Services/#/userform">Are you searching for a job?</a></h3></div>
                                {/* <div class="portfolio-caption-subheading text-muted">sub heading of cand</div>*/}
                             </div>
                         </div>
@@ -157,7 +158,7 @@ var cStyle = {
                                 <img class="img-fluid" src="assets/img/portfolio/02-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div><h3 class="portfolio-caption-heading">Are you in search of candidate </h3></div>
+                                <div><h3 class="portfolio-caption-heading"><a href="/Man_Power_Services/#/candidateform">Are you in search of candidate?</a></h3></div>
                                 {/* <div class="portfolio-caption-subheading text-muted">sub head</div>*/}
                             </div>
                         </div>
@@ -171,7 +172,7 @@ var cStyle = {
                                 <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                                <div><h3 class="portfolio-caption-heading"> Are you in search of maid, baby sitting </h3></div>
+                                <div><h3 class="portfolio-caption-heading"><a href="/Man_Power_Services/#/nurseform">Are you in search of a Nurse/baby sitter?</a></h3></div>
                             
                             </div>
                         </div>
@@ -185,7 +186,7 @@ var cStyle = {
                                 <img class="img-fluid" src="assets/img/portfolio/05-thumbnail.jpg" alt="" />
                             </a>
                             <div class="portfolio-caption">
-                            <div><h3 class="portfolio-caption-heading"> Any other service </h3></div>
+                            <div><h3 class="portfolio-caption-heading"><a href="/Man_Power_Services/#/serviceform"> Other services</a> </h3></div>
                             
                             </div>
                         </div>
@@ -196,7 +197,7 @@ var cStyle = {
  
  <section class="page-section" >
  <div class="container">
-           <Carousel >
+  <Carousel >
   <Carousel.Item>
     <img
       className="d-block w-100"
@@ -205,31 +206,40 @@ var cStyle = {
       style={ cStyle }
     />
     <Carousel.Caption>
-      <h4>Nulla vitae elit libero, a pharetra augue mollis interdum.</h4>
+      <h4>.......</h4>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
       src={c2}
-      alt="Third slide"
+      alt="First slide"
       style={ cStyle }
     />
-
     <Carousel.Caption>
-      <h4 className="text-black" >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+      <h4>........</h4>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
       src={c3}
+      alt="First slide"
+      style={ cStyle }
+    />
+    <Carousel.Caption>
+      <h4>..........</h4>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={c4}
       alt="Third slide"
       style={ cStyle }
     />
-
     <Carousel.Caption>
-      <h4>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</h4>
+      <h4 className="text-black" >.........</h4>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
@@ -428,16 +438,15 @@ Anthropic Softwares pvt ltd owns a platform which help us to build very stable p
                         </div>
                     </div>
                     <div class="text-center">
-                        <div id="success"></div>
                         <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
                     </div>
                 </form>
             </div>
         </section>
         <div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </div>
     </div>
     
