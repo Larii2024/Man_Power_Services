@@ -106,7 +106,7 @@ function Hom(){
 var sectionStyle = {
   width: "100%",
   height: "auto",
-  backgroundImage: `url(${header_bg})`
+  backgroundImage: `url(${header_bg})`,
 };
 var sectionStyle2 = {
   width: "100%",
@@ -115,7 +115,7 @@ var sectionStyle2 = {
 };
 var cStyle = {
   width: "100%",
-  height: "650px"
+  height: "500px" 
 };
 
   return(   
@@ -200,7 +200,7 @@ var cStyle = {
   <Carousel >
   <Carousel.Item>
     <img
-      className="d-block w-100"
+      className="d-block w-100 "
       src={c1}
       alt="First slide"
       style={ cStyle }
@@ -211,7 +211,7 @@ var cStyle = {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
+      className="d-block w-100 "
       src={c2}
       alt="First slide"
       style={ cStyle }
@@ -222,7 +222,7 @@ var cStyle = {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
+      className="d-block w-100 "
       src={c3}
       alt="First slide"
       style={ cStyle }
@@ -233,7 +233,7 @@ var cStyle = {
   </Carousel.Item>
   <Carousel.Item>
     <img
-      className="d-block w-100"
+      className="d-block w-100 "
       src={c4}
       alt="Third slide"
       style={ cStyle }
